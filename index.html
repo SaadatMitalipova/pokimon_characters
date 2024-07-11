@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+</head>
+    <style>
+        .container{
+            color: aliceblue;
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+        .list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 300px;
+            gap: 10px;
+            color: aquamarine;
+        }
+        .item{
+            background: burlywood;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-size: 24px;
+            border-radius: 5px;
+            flex-direction: column;
+
+        }
+        .item:hover{
+            background: aquamarine;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            color: #000;
+        }
+        .row {
+            display: flex;
+        }
+        .pokemons{
+            flex: 1;
+            border: 1px solid #414141;
+            padding: 10px;
+            font-size: 24px;
+        }
+        
+        .controller{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn{
+            width: 150px;
+            height: 40px;
+            border:1px solid #414141 ;
+            border-radius: 5px;
+            font-size: 20px;
+            color: #000;
+        }
+        .btn:hover{
+            background: burlywood;
+        }
+        .img{
+            width: 150px;
+        }
+    </style>
+<body>
+    <div class="container">
+        <h1>POKEMONS</h1>
+    <ul class="list">
+        
+    </ul>
+        
+        <div class="controller">
+            <button class="btn previous">previous</button>
+            <button class="btn next">next</button>
+        </div>
+    </div>
+    
+    <script defer src="./main.js"></script>
+</body>
+</html>
